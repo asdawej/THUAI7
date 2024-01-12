@@ -61,10 +61,7 @@ jobs:
     - uses: actions/checkout@v4
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: 4.0.x
 
     - name: Check Logic
       run: |
-        dotnet restore "./interface/Assets/Scripts/Interface.sln"
-        dotnet format "./interface/Assets/Scripts/Interface.sln" --severity error --no-restore --verify-no-changes
+        dotnet format "./interface/Assets/Scripts/" --severity error --no-restore --verify-no-changes
