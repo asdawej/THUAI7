@@ -66,4 +66,4 @@ jobs:
 
     - name: Check Interface
       run: |
-        dotnet format "./interface/Assets/Scripts/" --folder --severity error --no-restore --verify-no-changes
+        dotnet format whitespace "./interface/Assets/Scripts/" --folder --severity error --no-restore --verify-no-changes
