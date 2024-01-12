@@ -62,9 +62,8 @@ jobs:
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: 4.0.x
+        dotnet-version: 8.0.x
 
-    - name: Check Logic
+    - name: Check Interface
       run: |
-        dotnet restore "./interface/Assets/Scripts/Interface.sln"
-        dotnet format "./interface/Assets/Scripts/Interface.sln" --severity error --no-restore --verify-no-changes
+        dotnet format whitespace "./interface/Assets/Scripts/" --folder --verify-no-changes

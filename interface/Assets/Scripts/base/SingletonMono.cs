@@ -15,11 +15,11 @@ public class SingletonMono<T> : MonoBehaviour where T : MonoBehaviour
         if (Instance == null)
         {
             Instance = this as T;
-            //            DontDestroyOnLoad(gameObject);
+            // DontDestroyOnLoad(gameObject);
         }
         else
         {
-            //            Destroy(gameObject);
+            // Destroy(gameObject);
         }
     }
 
