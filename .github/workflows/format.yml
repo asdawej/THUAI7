@@ -64,4 +64,4 @@ jobs:
 
     - name: Check Logic
       run: |
-        dotnet format "./interface/Assets/Scripts/" --severity error --no-restore --verify-no-changes
+        dotnet format "./interface/Assets/Scripts/Interface.csproj" --severity error --no-restore --verify-no-changes
